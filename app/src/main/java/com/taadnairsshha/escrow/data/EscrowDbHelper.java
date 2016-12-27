@@ -23,6 +23,7 @@ public class EscrowDbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         /* creating table for website */
         db.execSQL(EscrowContract.Website.SQL_CREATE_TABLE);
+        db.execSQL(EscrowContract.Account.SQL_CREATE_TABLE);
     }
 
 

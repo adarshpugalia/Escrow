@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.taadnairsshha.escrow.Utils.CommonUtils;
+import com.taadnairsshha.escrow.activities.AddAcountActivity;
 import com.taadnairsshha.escrow.activities.AddWebsiteActivity;
 import com.taadnairsshha.escrow.data.EscrowDbHelper;
 import com.taadnairsshha.escrow.data.service.DbWebsiteService;
@@ -32,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         textView.append(String.valueOf(websiteList.size()));
+    }
+
+    public void goToAddWebsite(View view) {
         CommonUtils.startActivity(this, AddWebsiteActivity.class);
+    }
+
+    public void goToAddAccount(View view) {
+        CommonUtils.startActivity(this, AddAcountActivity.class);
     }
 }
