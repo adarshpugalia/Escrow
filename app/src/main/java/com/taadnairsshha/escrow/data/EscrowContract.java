@@ -21,10 +21,9 @@ public final class EscrowContract {
 
         public static final String SQL_CREATE_TABLE =
                 "CREATE TABLE " + TABLE_NAME + " (" +
-                        _ID + " INTEGER PRIMARY KEY," +
+                        _ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                         COLUMN_NAME + " VARCHAR(100) NOT NULL," +
-                        COLUMN_WEBSITE_TYPE + " ENUM('wallet', 'travel', 'cabs', 'movies', 'food') NOT NULL," +
+                        COLUMN_WEBSITE_TYPE + " VARCHAR(10) NOT NULL," +
                         COLUMN_HAS_WALLET + " BOOLEAN NOT NULL DEFAULT 0)";
-
     }
 }
