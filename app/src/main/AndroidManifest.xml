@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.AddWebsiteActivity" />
-        <activity android:name=".activities.AddAcountActivity"></activity>
+        <activity android:name=".activities.AddAcountActivity" />
+        <activity android:name=".activities.AddCouponActivity" />
+        <activity android:name=".activities.CouponsActivity"></activity>
     </application>
 
 </manifest>

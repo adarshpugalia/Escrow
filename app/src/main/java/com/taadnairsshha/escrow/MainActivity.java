@@ -9,7 +9,9 @@ import android.widget.TextView;
 
 import com.taadnairsshha.escrow.Utils.CommonUtils;
 import com.taadnairsshha.escrow.activities.AddAcountActivity;
+import com.taadnairsshha.escrow.activities.AddCouponActivity;
 import com.taadnairsshha.escrow.activities.AddWebsiteActivity;
+import com.taadnairsshha.escrow.activities.CouponsActivity;
 import com.taadnairsshha.escrow.data.EscrowDbHelper;
 import com.taadnairsshha.escrow.data.service.DbWebsiteService;
 import com.taadnairsshha.escrow.models.Website;
@@ -42,5 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToAddAccount(View view) {
         CommonUtils.startActivity(this, AddAcountActivity.class);
+    }
+
+    public void goToAddCoupon(View view) {
+        CommonUtils.startActivity(this, AddCouponActivity.class);
+    }
+
+    public void goToCoupons(View view) {
+        CommonUtils.startActivity(this, CouponsActivity.class);
     }
 }
